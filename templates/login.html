@@ -26,6 +26,9 @@
     <!-- Custom styles for this template -->
     <link href="../static/css/creative.min.css" rel="stylesheet">
 
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/trippin.css" rel="stylesheet">
+
 </head>
 
 <body id="page-top">
@@ -33,45 +36,53 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <a class="navbar-brand" href="#page-top">Trippin</a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-            aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-    </div>
 </nav>
 
-<div class="main-content">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="wrap">
-                    <p class="form-title">
-                        Sign In</p>
-                    <form class="login">
-                        <input type="text" placeholder="Username"/>
-                        <input type="password" placeholder="Password"/>
-                        <input type="submit" value="Sign In" class="btn btn-success btn-sm"/>
-                        <div class="">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox"/>
-                                            Remember Me
-                                        </label>
+<header class="masthead">
+
+
+    <div class="main-content">
+        <div class="header-content">
+            <div class="header-content-inner">
+                <center>
+                <div class="container">
+                    <div class="row">
+                        <div class="mx-auto col-md-6">
+                            <div class="wrap">
+                                <form class="login">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="uname"
+                                               placeholder="Username">
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <a href="" class="forgot-pass">Forgot Password</a>
-                                </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" id="pass"
+                                               placeholder="Password">
+                                    </div>
+                                    <input type="submit" value="Sign In" class="btn btn-default btn-xl sr-button"/>
+                                    <div class="">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"/>
+                                                        Remember Me
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="" class="forgot-pass">Forgot Password</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
+                </center>
             </div>
         </div>
     </div>
-</div>
+</header>
+
 {% include 'includes/footer.html' %}
