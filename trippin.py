@@ -7,7 +7,7 @@ def hello():
     return render_template('index.html')
 
 @app.route("/moop")
-def hello():
+def moop():
     return "moop"
     return render_template('index.html')
 
